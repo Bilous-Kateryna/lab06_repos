@@ -21,7 +21,7 @@ void Print(double* a, const int n)
     cout << endl;
 }
 
-// обчислює суму додатних елементів масиву
+// 1.1. обчислює суму додатних елементів масиву
 double SumPositive(double* a, const int n)
 {
     double S = 0;
@@ -93,7 +93,7 @@ int main()
     Create(a, n, Low, High);
     Print(a, n);
 
-    cout << "1.1. )= " << SumPositive(a, n) << endl;
+    cout << "1.1. = " << SumPositive(a, n) << endl;
 
     int iMax = IndexMaxAbs(a, n);
     int iMin = IndexMinAbs(a, n);
@@ -105,7 +105,7 @@ int main()
         cout << "1.2. Product between = " << P << endl;
 
     SortOddDesc(a, n);
-    cout << "2. ):" << endl;
+    cout << "2. " << endl;
     Print(a, n);
 
     delete[] a;
